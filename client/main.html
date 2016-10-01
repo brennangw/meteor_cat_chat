@@ -1,0 +1,24 @@
+<head>
+  <title>Talk</title>
+</head>
+
+<body>
+<header class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/">Talk</a>
+    </div>
+</header>
+
+{{> loginButtons}}
+  <h1>Talk Here!</h1>
+
+    <div id="main">
+    {{> messages_list}}
+    </div>
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
