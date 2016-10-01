@@ -1,4 +1,4 @@
-Template.messages_list.helpers({
+Template.messagesList.helpers({
     messages: function() {
         return Messages.find();
     }
