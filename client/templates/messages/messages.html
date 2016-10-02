@@ -1,4 +1,7 @@
 <template name="messages">
-    {{> messagesList }}
     {{> messageSubmit }}
+    {{> messagesList messages=messagesData}}
+    {{#if nextPath}}
+        <a class="load-more" href="{{nextPath}}">Load more</a>
+    {{/if}}
 </template>
