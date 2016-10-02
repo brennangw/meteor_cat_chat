@@ -4,10 +4,13 @@ Template.messageSubmit.events({
 
         var message = {
             content: $(e.target).find('[name=message]').val(),
-            time: "placeholder time",
-            sender: "placeholder sender"
         };
 
-        Messages.insert(message);
+        Meteor.call('messageInsert', message, function(error, result) {
+            // display the error to the user and abort
+            if (error)
+                return alert(error.reason);
+        });
+
     }
 });
