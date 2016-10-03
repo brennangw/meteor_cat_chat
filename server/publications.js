@@ -1,3 +1,4 @@
+import { Messages } from '../lib/collections/messages.js';
 Meteor.publish('messages', function(options) {
     check(options, {
         sort: Object,

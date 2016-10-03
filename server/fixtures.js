@@ -1,3 +1,5 @@
+import { Messages } from '../lib/collections/messages.js';
+
 if (Messages.find().count() === 0) {
     Messages.insert({
         sender: 'Me',
